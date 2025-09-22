@@ -11,11 +11,7 @@ const AvailablePlayers = ({ playersPromise }) => {
       {playerData.map((players) => (
         <div class="card bg-base-100 w-96 shadow-lg p-4 rounded-xl">
           <figure>
-            <img
-              className="w-[350px] h-[200px]"
-              src={players.img}
-              alt="Shoes"
-            />
+            <img className="w-full h-[200px] " src={players.img} alt="Shoes" />
           </figure>
           <div className="mt-2">
             <div className="flex gap-2">
