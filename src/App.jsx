@@ -3,19 +3,31 @@ import "./App.css";
 import AvailablePlayers from "./Component/AvailablePlayers/AvailablePlayers";
 import Navbar from "./Component/Navbar/Navbar";
 import SelectedPlayers from "./Component/SelectedPlayers/SelectedPlayers";
+import { ToastContainer } from "react-toastify";
 
 const availablePlayerPromise = async () => {
   const res = await fetch("/player.json");
   return res.json();
 };
+const playersPromise = availablePlayerPromise();
 function App() {
-  const [toggole, setToggole] = useState(false);
-  const playersPromise = availablePlayerPromise();
+  const [toggole, setToggole] = useState(true);
+  const [availableBalance, setAvailableBalance] = useState(600000000);
+  const [purchesedPlayers, setPurchasedPlayers] = useState([]);
+  const removePlayer = (p) => {
+    const filterPLayer = purchesedPlayers.filter((ply) => ply.id !== p.id);
+    setPurchasedPlayers(filterPLayer);
+    setAvailableBalance(availableBalance + p.priceUSD);
+  };
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar availableBalance={availableBalance}></Navbar>
       <div className="max-w-[1200px] mx-auto flex justify-between items-center mt-10">
-        <h2 className="font-bold text-2xl">Available Players </h2>
+        <h2 className="font-bold text-2xl">
+          {toggole === true
+            ? "Available PLayers"
+            : `Selected Players (${purchesedPlayers.length}/6)`}
+        </h2>
         <div>
           <button
             onClick={() => setToggole(true)}
@@ -31,7 +43,7 @@ function App() {
               toggole === false ? "bg-yellow-300" : ""
             }`}
           >
-            Selected <span>(0)</span>
+            Selected <span>({purchesedPlayers.length})</span>
           </button>
         </div>
       </div>
@@ -43,7 +55,13 @@ function App() {
             </div>
           }
         >
-          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+          <AvailablePlayers
+            setPurchasedPlayers={setPurchasedPlayers}
+            purchesedPlayers={purchesedPlayers}
+            availableBalance={availableBalance}
+            setAvailableBalance={setAvailableBalance}
+            playersPromise={playersPromise}
+          ></AvailablePlayers>
         </Suspense>
       ) : (
         <Suspense
@@ -53,9 +71,13 @@ function App() {
             </div>
           }
         >
-          <SelectedPlayers></SelectedPlayers>
+          <SelectedPlayers
+            removePlayer={removePlayer}
+            purchesedPlayers={purchesedPlayers}
+          ></SelectedPlayers>
         </Suspense>
       )}
+      <ToastContainer />
     </>
   );
 }

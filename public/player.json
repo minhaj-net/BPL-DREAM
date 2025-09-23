@@ -7,7 +7,7 @@
     "rating": 9.5,
     "battingStyle": "Left-handed",
     "bowlingStyle": "Slow left-arm orthodox",
-    "priceUSD": 150000,
+    "priceUSD": 1500000,
     "team": "Rangpur Riders",
     "country": "Bangladesh"
   },
@@ -19,7 +19,7 @@
     "rating": 8.8,
     "battingStyle": "Left-handed",
     "bowlingStyle": "Does not bowl",
-    "priceUSD": 100000,
+    "priceUSD": 10000000,
     "team": "Fortune Barishal",
     "country": "Bangladesh"
   },
@@ -31,7 +31,7 @@
     "rating": 8.9,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Does not bowl",
-    "priceUSD": 90000,
+    "priceUSD": 900000,
     "team": "Fortune Barishal",
     "country": "Bangladesh"
   },
@@ -43,7 +43,7 @@
     "rating": 9.1,
     "battingStyle": "Left-handed",
     "bowlingStyle": "Left-arm fast-medium",
-    "priceUSD": 120000,
+    "priceUSD": 1200000,
     "team": "Comilla Victorians",
     "country": "Bangladesh"
   },
@@ -55,7 +55,7 @@
     "rating": 8.6,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Right-arm off-break",
-    "priceUSD": 85000,
+    "priceUSD": 850000,
     "team": "Fortune Barishal",
     "country": "Bangladesh"
   },
@@ -67,7 +67,7 @@
     "rating": 9.3,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Right-arm fast",
-    "priceUSD": 180000,
+    "priceUSD": 1800000,
     "team": "Comilla Victorians",
     "country": "West Indies"
   },
@@ -79,7 +79,7 @@
     "rating": 8.7,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Does not bowl",
-    "priceUSD": 95000,
+    "priceUSD": 950000,
     "team": "Comilla Victorians",
     "country": "Bangladesh"
   },
@@ -91,7 +91,7 @@
     "rating": 8.0,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Does not bowl",
-    "priceUSD": 75000,
+    "priceUSD": 750000,
     "team": "Rangpur Riders",
     "country": "Bangladesh"
   },
@@ -103,7 +103,7 @@
     "rating": 9.0,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Right-arm off-break",
-    "priceUSD": 110000,
+    "priceUSD": 1100000,
     "team": "Khulna Tigers",
     "country": "Bangladesh"
   },
@@ -115,7 +115,7 @@
     "rating": 8.5,
     "battingStyle": "Left-handed",
     "bowlingStyle": "Does not bowl",
-    "priceUSD": 80000,
+    "priceUSD": 800000,
     "team": "Khulna Tigers",
     "country": "Bangladesh"
   },
@@ -127,7 +127,7 @@
     "rating": 8.2,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Right-arm off-break",
-    "priceUSD": 70000,
+    "priceUSD": 700000,
     "team": "Fortune Barishal",
     "country": "Bangladesh"
   },
@@ -139,7 +139,7 @@
     "rating": 8.3,
     "battingStyle": "Right-handed",
     "bowlingStyle": "Right-arm off-break",
-    "priceUSD": 72000,
+    "priceUSD": 720000,
     "team": "Dhaka Capitals",
     "country": "Bangladesh"
   }
